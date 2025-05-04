@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
+ <form>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" placeholder="Name" required><br><br>
 
@@ -21,7 +21,7 @@
 
     <label for="cars">Car Brands:</label>
     <select id="cars" name="cars" required>
-      <option value="">--Please choose an option--</option>
+      <option value="" disabled selected>--Please choose an option--</option>
       <option value="BMW">BMW</option>
       <option value="Audi">Audi</option>
       <option value="Tesla">Tesla</option>
@@ -34,7 +34,8 @@
     <input type="date" id="dob" name="dob" required><br><br>
 
     <label for="tel">Phone Number:</label>
-    <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx"><br><br>
+    <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx"
+           pattern="\d{3}-\d{3}-\d{4}" title="Format: xxx-xxx-xxxx"><br><br>
 
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" placeholder="Password" required><br><br>
